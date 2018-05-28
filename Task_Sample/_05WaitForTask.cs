@@ -10,7 +10,7 @@ namespace Task_Sample
 {
   class _05WaitForTask
   {
-    public static void Main()
+    public  static void Main()
     {
       var cts = new CancellationTokenSource();
       var token = cts.Token;
@@ -28,7 +28,7 @@ namespace Task_Sample
       t2.Start();
 
       Task.WaitAll(new[] { t1, t2 }, token );
-
+      //Task.WhenAll(new[] { t1, t2 });
       sw.Stop();
       Console.WriteLine("Elapsed time in ms: " + sw.ElapsedMilliseconds );
       Console.ReadLine();

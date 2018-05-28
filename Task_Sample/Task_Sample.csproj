@@ -43,10 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="_09ReaderWriterLock.cs" />
+    <None Include="_09ReaderWriterLock.cs" />
     <None Include="_07SpinLock.cs" />
     <None Include="_08Mutex.cs" />
-    <None Include="_05WaitForTask.cs" />
+    <Compile Include="_05WaitForTask.cs" />
     <None Include="_06CriticalSection.cs" />
     <None Include="_03CancellingATask.cs" />
     <None Include="_04CompositeCancellation.cs" />
